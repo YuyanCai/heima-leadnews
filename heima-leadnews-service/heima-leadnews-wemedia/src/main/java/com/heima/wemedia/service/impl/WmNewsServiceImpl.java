@@ -106,7 +106,6 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews> impleme
         }
 
         //1.保存或修改文章
-
         WmNews wmNews = new WmNews();
         //属性拷贝 属性名词和类型相同才能拷贝
         BeanUtils.copyProperties(dto,wmNews);

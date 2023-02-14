@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>heima-leadnews-app-gateway</module>
+        <module>heima-leadnews-wemedia-gateway</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

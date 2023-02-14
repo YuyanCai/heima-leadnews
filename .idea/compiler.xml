@@ -9,25 +9,27 @@
         <module name="freemarker-demo" />
         <module name="heima-file-starter" />
         <module name="minio-demo" />
+        <module name="heima-leadnews-wemedia-gateway" />
         <module name="heima-leadnews-utils" />
+        <module name="heima-leadnews-wemedia" />
         <module name="heima-leadnews-feign-api" />
         <module name="heima-leadnews-user" />
         <module name="heima-leadnews-app-gateway" />
         <module name="heima-leadnews-article" />
         <module name="heima-leadnews-common" />
         <module name="heima-leadnews-model" />
-        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="heima-leadnews-apis" target="1.8" />
+      <module name="renren-generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="freemarker-demo" options="-parameters" />
       <module name="heima-file-starter" options="-parameters" />
-      <module name="heima-leadnews" options="" />
+      <module name="heima-leadnews" options="-parameters" />
       <module name="heima-leadnews-apis" options="-parameters" />
       <module name="heima-leadnews-app-gateway" options="-parameters" />
       <module name="heima-leadnews-article" options="-parameters" />
@@ -39,6 +41,8 @@
       <module name="heima-leadnews-test" options="" />
       <module name="heima-leadnews-user" options="-parameters" />
       <module name="heima-leadnews-utils" options="-parameters" />
+      <module name="heima-leadnews-wemedia" options="-parameters" />
+      <module name="heima-leadnews-wemedia-gateway" options="-parameters" />
       <module name="minio-demo" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
     </option>

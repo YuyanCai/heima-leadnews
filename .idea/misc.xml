@@ -5,7 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/heima-leadnews-service/renren-generator/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-basic/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-test/minio-demo/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-basic/heima-file-starter/pom.xml" />

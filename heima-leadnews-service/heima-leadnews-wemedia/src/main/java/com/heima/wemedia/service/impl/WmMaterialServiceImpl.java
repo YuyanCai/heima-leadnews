@@ -13,6 +13,7 @@ import com.heima.model.wemedia.pojos.WmMaterial;
 import com.heima.utils.thread.WmThreadLocalUtil;
 import com.heima.wemedia.mapper.WmMaterialMapper;
 import com.heima.wemedia.service.WmMaterialService;
+import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -106,5 +107,19 @@ public class WmMaterialServiceImpl extends ServiceImpl<WmMaterialMapper, WmMater
         ResponseResult responseResult = new PageResponseResult(dto.getPage(),dto.getSize(),(int)page.getTotal());
         responseResult.setData(page.getRecords());
         return responseResult;
+    }
+
+    @Override
+    public ResponseResult delPicture(Integer id) {
+        baseMapper.deleteById(id);
+        return ResponseResult.okResult(null);
+    }
+
+    @Override
+    public ResponseResult collectPicture(Integer id) {
+        WmMaterial wmMaterial = new WmMaterial();
+        wmMaterial.setIsCollection(Short.valueOf(String.valueOf(id)));
+        baseMapper.updateById(wmMaterial);
+        return ResponseResult.okResult(null);
     }
 }
