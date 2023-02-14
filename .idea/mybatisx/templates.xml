@@ -5,8 +5,8 @@
       <TemplateContext>
         <option name="generateConfig">
           <GenerateConfig>
-            <option name="annotationType" value="JPA" />
-            <option name="basePackage" value="generator" />
+            <option name="annotationType" value="NONE" />
+            <option name="basePackage" value="com.heima.article" />
             <option name="basePath" value="src/main/java" />
             <option name="classNameStrategy" value="camel" />
             <option name="encoding" value="UTF-8" />
@@ -15,8 +15,8 @@
             <option name="ignoreFieldSuffix" value="" />
             <option name="ignoreTablePrefix" value="" />
             <option name="ignoreTableSuffix" value="" />
-            <option name="moduleName" value="heima-leadnews-user" />
-            <option name="modulePath" value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user" />
+            <option name="moduleName" value="heima-leadnews-article" />
+            <option name="modulePath" value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article" />
             <option name="moduleUIInfoList">
               <list>
                 <ModuleInfoGo>
@@ -26,28 +26,26 @@
                   <option name="encoding" value="UTF-8" />
                   <option name="fileName" value="${domain.fileName}" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}.java" />
-                  <option name="modulePath" value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user" />
-                  <option name="packageName" value="generator.domain" />
+                  <option name="modulePath" value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article" />
+                  <option name="packageName" value="com.heima.article.pojos" />
                 </ModuleInfoGo>
               </list>
             </option>
-            <option name="needsComment" value="true" />
             <option name="needsModel" value="false" />
-            <option name="relativePackage" value="domain" />
+            <option name="relativePackage" value="pojos" />
             <option name="superClass" value="" />
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="ApUser" />
-                  <option name="tableName" value="ap_user" />
+                  <option name="className" value="ApArticle" />
+                  <option name="tableName" value="ap_article" />
                 </TableUIInfo>
               </list>
             </option>
             <option name="templatesName" value="custom-model-swagger" />
-            <option name="useLombokPlugin" value="true" />
           </GenerateConfig>
         </option>
-        <option name="moduleName" value="heima-leadnews-user" />
+        <option name="moduleName" value="heima-leadnews-article" />
         <option name="projectPath" value="$PROJECT_DIR$" />
         <option name="templateName" value="custom-model-swagger" />
       </TemplateContext>
