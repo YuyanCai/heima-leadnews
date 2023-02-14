@@ -1,0 +1,18 @@
+[
+  {
+    "type": "text",
+    "value": "我是张三，我很帅"
+  },
+  {
+    "type": "image",
+    "value": "http://localhost:9000/leadnews/2023/02/14/7d40442776bb48e0b0635e3ca37b511f.png"
+  },
+  {
+    "type": "text",
+    "value": "啦啦啦啦"
+  },
+  {
+    "type": "text",
+    "value": "请在这里输入正文"
+  }
+]
