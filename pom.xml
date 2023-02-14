@@ -16,6 +16,7 @@
         <module>heima-leadnews-service</module>
         <module>heima-leadnews-gateway</module>
         <module>heima-leadnews-test</module>
+        <module>heima-leadnews-test/freemarker-demo</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->
