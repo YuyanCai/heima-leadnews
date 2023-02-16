@@ -11,6 +11,9 @@
 
     <artifactId>heima-leadnews-basic</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>heima-file-starter</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

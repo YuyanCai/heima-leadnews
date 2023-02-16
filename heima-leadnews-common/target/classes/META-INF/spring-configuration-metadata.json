@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "aip",
+      "type": "com.heima.common.aip.GreenImageScan",
+      "sourceType": "com.heima.common.aip.GreenImageScan"
+    },
+    {
+      "name": "aip",
+      "type": "com.heima.common.aip.GreenTextScan",
+      "sourceType": "com.heima.common.aip.GreenTextScan"
+    },
+    {
+      "name": "tess4j",
+      "type": "com.heima.common.tess4j.Tess4jClient",
+      "sourceType": "com.heima.common.tess4j.Tess4jClient"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aip.a-p-i-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenImageScan"
+    },
+    {
+      "name": "aip.a-p-i-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenTextScan"
+    },
+    {
+      "name": "aip.a-p-p-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenImageScan"
+    },
+    {
+      "name": "aip.a-p-p-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenTextScan"
+    },
+    {
+      "name": "aip.gson",
+      "type": "com.google.gson.Gson",
+      "sourceType": "com.heima.common.aip.GreenTextScan"
+    },
+    {
+      "name": "aip.s-e-c-r-e-t-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenImageScan"
+    },
+    {
+      "name": "aip.s-e-c-r-e-t-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.aip.GreenTextScan"
+    },
+    {
+      "name": "tess4j.data-path",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.tess4j.Tess4jClient"
+    },
+    {
+      "name": "tess4j.language",
+      "type": "java.lang.String",
+      "sourceType": "com.heima.common.tess4j.Tess4jClient"
+    }
+  ],
+  "hints": []
+}

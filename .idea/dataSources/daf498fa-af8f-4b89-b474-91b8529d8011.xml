@@ -1,62 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
-    <root id="1">
-      <DefaultCasing>mixed/mixed</DefaultCasing>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>|root||root|localhost|ALTER|G
-|root||root|localhost|ALTER ROUTINE|G
-|root||root|localhost|CREATE|G
-|root||root|localhost|CREATE ROUTINE|G
-|root||root|localhost|CREATE TABLESPACE|G
-|root||root|localhost|CREATE TEMPORARY TABLES|G
-|root||root|localhost|CREATE USER|G
-|root||root|localhost|CREATE VIEW|G
-|root||root|localhost|DELETE|G
-|root||root|localhost|DROP|G
-|root||root|localhost|EVENT|G
-|root||root|localhost|EXECUTE|G
-|root||root|localhost|FILE|G
-|root||root|localhost|INDEX|G
-|root||root|localhost|INSERT|G
-|root||root|localhost|LOCK TABLES|G
-|root||root|localhost|PROCESS|G
-|root||root|localhost|REFERENCES|G
-|root||root|localhost|RELOAD|G
-|root||root|localhost|REPLICATION CLIENT|G
-|root||root|localhost|REPLICATION SLAVE|G
-|root||root|localhost|SELECT|G
-|root||root|localhost|SHOW DATABASES|G
-|root||root|localhost|SHOW VIEW|G
-|root||root|localhost|SHUTDOWN|G
-|root||mysql.session|localhost|SUPER|G
-|root||root|localhost|SUPER|G
-|root||root|localhost|TRIGGER|G
-|root||root|localhost|UPDATE|G
-|root||root|localhost|grant option|G
-performance_schema|schema||mysql.session|localhost|SELECT|G
-project_crowd|schema||Jacob||ALTER|G
-project_crowd|schema||Jacob||ALTER ROUTINE|G
-project_crowd|schema||Jacob||CREATE|G
-project_crowd|schema||Jacob||CREATE ROUTINE|G
-project_crowd|schema||Jacob||CREATE TEMPORARY TABLES|G
-project_crowd|schema||Jacob||CREATE VIEW|G
-project_crowd|schema||Jacob||DELETE|G
-project_crowd|schema||Jacob||DROP|G
-project_crowd|schema||Jacob||EVENT|G
-project_crowd|schema||Jacob||EXECUTE|G
-project_crowd|schema||Jacob||INDEX|G
-project_crowd|schema||Jacob||INSERT|G
-project_crowd|schema||Jacob||LOCK TABLES|G
-project_crowd|schema||Jacob||REFERENCES|G
-project_crowd|schema||Jacob||SELECT|G
-project_crowd|schema||Jacob||SHOW VIEW|G
-project_crowd|schema||Jacob||TRIGGER|G
-project_crowd|schema||Jacob||UPDATE|G
-sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
-      <ServerVersion>5.7.22</ServerVersion>
-    </root>
+    <root id="1"/>
     <collation id="2" parent="1" name="big5_chinese_ci">
       <Charset>big5</Charset>
       <DefaultForCharset>1</DefaultForCharset>
