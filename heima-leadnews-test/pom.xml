@@ -15,6 +15,7 @@
     <modules>
         <module>freemarker-demo</module>
         <module>minio-demo</module>
+        <module>tess4j-demo</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

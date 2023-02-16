@@ -2,7 +2,7 @@
 
 <configuration>
     <!--定义日志文件的存储地址,使用绝对路径-->
-    <property name="LOG_HOME" value="e:/logs"/>
+    <property name="LOG_HOME" value="/Users/xiaocai/Dev/leadnews_logs"/>
 
     <!-- Console 输出设置 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">

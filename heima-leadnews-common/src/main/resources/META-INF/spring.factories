@@ -1,4 +1,7 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.heima.common.exception.ExceptionCatch,\
   com.heima.common.swagger.SwaggerConfiguration,\
-  com.heima.common.swagger.Swagger2Configuration
+  com.heima.common.swagger.Swagger2Configuration,\
+  com.heima.common.aip.GreenImageScan,\
+  com.heima.common.aip.GreenTextScan,\
+  com.heima.common.tess4j.Tess4jClient
