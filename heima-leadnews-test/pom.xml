@@ -17,6 +17,7 @@
         <module>minio-demo</module>
         <module>tess4j-demo</module>
         <module>kafka-demo</module>
+        <module>es-init</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
