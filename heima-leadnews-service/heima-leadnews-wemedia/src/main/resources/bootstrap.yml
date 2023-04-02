@@ -6,9 +6,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 172.20.10.2:8848
+        server-addr: 172.20.10.3:8848
       config:
-        server-addr: 172.20.10.2:8848
+        server-addr: 172.20.10.3:8848
         file-extension: yml
 tess4j:
   data-path: /Users/xiaocai/Documents/JavaResource/Code/SpringCode/project-training/heima-leadnews/heima-leadnews

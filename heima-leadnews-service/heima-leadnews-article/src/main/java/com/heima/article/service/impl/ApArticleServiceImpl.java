@@ -66,6 +66,7 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
         if (!loadtype.equals(ArticleConstants.LOADTYPE_LOAD_MORE) && !loadtype.equals(ArticleConstants.LOADTYPE_LOAD_NEW)) {
             loadtype = ArticleConstants.LOADTYPE_LOAD_MORE;
         }
+
         //文章频道校验
         if (StringUtils.isEmpty(dto.getTag())) {
             dto.setTag(ArticleConstants.DEFAULT_TAG);
@@ -107,7 +108,7 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
              */
             save(apArticle);
 
-            ApArticleConfig apArticleConfig = new ApArticleConfig(dto.getId());
+            ApArticleConfig apArticleConfig = new ApArticleConfig(apArticle.getId());
             apArticleConfigMapper.insert(apArticleConfig);
 
             ApArticleContent apArticleContent = new ApArticleContent();

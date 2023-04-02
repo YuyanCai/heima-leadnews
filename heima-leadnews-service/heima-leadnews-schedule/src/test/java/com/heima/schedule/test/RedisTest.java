@@ -60,7 +60,7 @@ public class RedisTest {
         System.out.println(scan);
     }
 
-    //耗时6151
+    //耗时38304
     @Test
     public  void testPiple1(){
         long start =System.currentTimeMillis();

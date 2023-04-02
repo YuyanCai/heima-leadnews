@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @author: xiaocai
  * @since: 2023/02/16/16:03
  */
-@FeignClient(value = "leadnews-article",fallback = IArticleClientFallback.class)
+@FeignClient(value = "leadnews-article", fallback = IArticleClientFallback.class)
 public interface IArticleClient {
     @PostMapping("/api/v1/article/save")
-    public ResponseResult saveArticle(@RequestBody ArticleDto dto) ;
+    public ResponseResult saveArticle(@RequestBody ArticleDto dto);
 }
