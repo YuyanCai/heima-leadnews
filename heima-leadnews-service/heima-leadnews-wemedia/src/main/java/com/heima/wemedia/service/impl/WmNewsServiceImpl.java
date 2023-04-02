@@ -93,7 +93,6 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews> impleme
         return responseResult;
     }
 
-
     @Autowired
     private WmNewsAutoScanService wmNewsAutoScanService;
 

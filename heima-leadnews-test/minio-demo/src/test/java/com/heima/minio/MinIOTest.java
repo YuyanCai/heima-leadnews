@@ -47,7 +47,7 @@ public class MinIOTest {
     @Test
     public void testUpdateImgFile() {
         try {
-            FileInputStream fileInputStream = new FileInputStream("/Users/xiaocai/Documents/icon/Asias.jpeg");
+            FileInputStream fileInputStream = new FileInputStream("/Users/xiaocai/Documents/icon/7-140223103130591.png");
             String filePath = fileStorageService.uploadImgFile("", "Asias.jpeg", fileInputStream);
             System.out.println(filePath);
         } catch (FileNotFoundException e) {

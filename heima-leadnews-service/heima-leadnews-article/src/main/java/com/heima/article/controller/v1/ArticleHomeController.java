@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/article")
 public class ArticleHomeController {
 
-
     @Autowired
     private ApArticleService apArticleService;
 
