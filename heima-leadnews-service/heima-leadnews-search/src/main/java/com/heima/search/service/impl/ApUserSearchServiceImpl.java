@@ -71,7 +71,7 @@ public class ApUserSearchServiceImpl implements ApUserSearchService {
      */
     @Override
     public ResponseResult findUserSearch() {
-        //获取当前用户
+        //获取当前登录用户
         ApUser user = AppThreadLocalUtil.getUser();
         if(user == null){
             return ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN);
