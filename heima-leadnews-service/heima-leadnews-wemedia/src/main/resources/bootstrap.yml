@@ -10,6 +10,8 @@ spring:
       config:
         server-addr: 172.20.10.3:8848
         file-extension: yml
+  main:
+    allow-bean-definition-overriding: true
 tess4j:
   data-path: /Users/xiaocai/Documents/JavaResource/Code/SpringCode/project-training/heima-leadnews/heima-leadnews
   language: chi_sim

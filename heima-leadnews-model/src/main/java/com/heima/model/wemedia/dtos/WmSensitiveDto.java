@@ -19,7 +19,7 @@ public class WmSensitiveDto {
     /**
      * id
      */
-    private String id;
+    private Integer id;
 
     /**
      * 敏感词
