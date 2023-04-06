@@ -1,6 +1,7 @@
 package com.heima.wemedia.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.heima.model.common.dtos.PageResponseResult;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.wemedia.dtos.WmSensitiveDto;
 import com.heima.model.wemedia.dtos.WmSensitivePageReqDto;
@@ -15,7 +16,7 @@ public interface WmSensitiveService extends IService<WmSensitive> {
      */
     public ResponseResult delSensitive(String id);
 
-    public ResponseResult listSensitive(WmSensitivePageReqDto wmSensitivePageReqDto);
+    public PageResponseResult listSensitive(WmSensitivePageReqDto wmSensitivePageReqDto);
 
     public ResponseResult updateSensitive(WmSensitiveDto wmSensitiveDto);
 

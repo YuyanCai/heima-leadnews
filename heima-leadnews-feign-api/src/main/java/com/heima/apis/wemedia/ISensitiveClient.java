@@ -1,6 +1,7 @@
 package com.heima.apis.wemedia;
 
 import com.heima.model.article.dtos.ArticleDto;
+import com.heima.model.common.dtos.PageResponseResult;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.wemedia.dtos.WmSensitiveDto;
 import com.heima.model.wemedia.dtos.WmSensitivePageReqDto;
@@ -20,7 +21,7 @@ public interface ISensitiveClient {
     public ResponseResult delSensitive(@PathVariable("id") String id);
 
     @PostMapping("/api/v1/sensitive/list")
-    public ResponseResult listSensitive(@RequestBody WmSensitivePageReqDto wmSensitivePageReqDto);
+    public PageResponseResult listSensitive(@RequestBody WmSensitivePageReqDto wmSensitivePageReqDto);
 
     @PostMapping("/api/v1/sensitive/save")
     public ResponseResult saveSensitive(@RequestBody WmSensitiveDto wmSensitiveDto);

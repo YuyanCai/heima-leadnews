@@ -8,9 +8,9 @@ import lombok.Data;
  */
 @Data
 public class ApUserReqDto {
-    private String id;
+    private Integer id;
     private String msg;
-    private String page;
-    private String size;
-    private String status;
+    private Integer page;
+    private Integer size;
+    private Integer status;
 }
