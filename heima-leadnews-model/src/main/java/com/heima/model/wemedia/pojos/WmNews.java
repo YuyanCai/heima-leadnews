@@ -9,6 +9,7 @@ import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.PriorityQueue;
 
 /**
  * <p>
@@ -116,6 +117,9 @@ public class WmNews implements Serializable {
 
     @TableField("enable")
     private Short enable;
+
+    @TableField(exist = false)
+    private String authorName;
     
      //状态枚举类
     @Alias("WmNewsStatus")
