@@ -1,6 +1,7 @@
 package com.heima.wemedia.feign;
 
 import com.heima.apis.wemedia.ISensitiveClient;
+import com.heima.model.common.dtos.PageResponseResult;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.wemedia.dtos.WmSensitiveDto;
 import com.heima.model.wemedia.dtos.WmSensitivePageReqDto;
@@ -26,7 +27,7 @@ public class SensitiveClient implements ISensitiveClient {
 
     @Override
     @PostMapping("/api/v1/sensitive/list")
-    public ResponseResult listSensitive(@RequestBody WmSensitivePageReqDto wmSensitivePageReqDto){
+    public PageResponseResult listSensitive(@RequestBody WmSensitivePageReqDto wmSensitivePageReqDto){
         return wmSensitiveService.listSensitive(wmSensitivePageReqDto);
     }
 

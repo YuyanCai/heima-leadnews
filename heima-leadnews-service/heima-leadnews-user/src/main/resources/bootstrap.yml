@@ -10,3 +10,5 @@ spring:
       config:
         server-addr: 172.20.10.3:8848
         file-extension: yml
+  main:
+    allow-bean-definition-overriding: true

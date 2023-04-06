@@ -17,6 +17,7 @@ import com.heima.wemedia.service.WmSensitiveService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 /**
  * @author: xiaocai
@@ -35,22 +36,22 @@ public class WmSensitiveServiceImpl extends ServiceImpl<WmSensitiveMapper, WmSen
     }
 
     @Override
-    public ResponseResult listSensitive(WmSensitivePageReqDto dto) {
+    public PageResponseResult listSensitive(WmSensitivePageReqDto dto) {
         //1.检查参数
         //分页检查
-        dto.checkParam();
+//        dto.checkParam();
 
         //2.分页条件查询
         IPage page = new Page(dto.getPage(), dto.getSize());
         QueryWrapper<WmSensitive> wrapper = new QueryWrapper<>();
 
-        if (!dto.getName().isEmpty()){
-            wrapper.eq("sensitives", dto.getName());
+        if (!StringUtils.isEmpty(dto.getName())){
+            wrapper.like("sensitives", dto.getName());
         }
         wrapper.orderByDesc("created_time");
         page = page(page, wrapper);
         //3.结果返回
-        ResponseResult responseResult = new PageResponseResult(dto.getPage(), dto.getSize(), (int) page.getTotal());
+        PageResponseResult responseResult = new PageResponseResult(dto.getPage(), dto.getSize(), (int) page.getTotal());
         responseResult.setData(page.getRecords());
 
         return responseResult;
