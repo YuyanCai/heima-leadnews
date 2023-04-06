@@ -60,7 +60,7 @@ public class WmNewsTaskServiceImpl implements WmNewsTaskService {
     @Override
     public void scanNewsByTask() {
 
-        log.info("消费任务，审核文章");
+        log.info("通过Springboot自带@Scheduled注解每1s去读取redis中list集合的数据，一旦读取成功就调用api进行自动文章审核");
 
         ResponseResult responseResult = scheduleClient.poll(TaskTypeEnum.NEWS_SCAN_TIME.getTaskType(), TaskTypeEnum.NEWS_SCAN_TIME.getPriority());
         if(responseResult.getCode().equals(200) && responseResult.getData() != null){
