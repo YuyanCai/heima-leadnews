@@ -4,6 +4,7 @@ import com.heima.apis.article.IArticleClient;
 import com.heima.model.article.dtos.ArticleDto;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.common.enums.AppHttpCodeEnum;
+import com.heima.model.user.dtos.LikesBehaviorDto;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,4 +17,5 @@ public class IArticleClientFallback implements IArticleClient {
     public ResponseResult saveArticle(ArticleDto dto)  {
         return ResponseResult.errorResult(AppHttpCodeEnum.SERVER_ERROR,"获取数据失败");
     }
+
 }
