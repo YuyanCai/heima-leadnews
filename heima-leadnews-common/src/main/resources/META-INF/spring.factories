@@ -5,4 +5,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.heima.common.aip.GreenImageScan,\
   com.heima.common.aip.GreenTextScan,\
   com.heima.common.tess4j.Tess4jClient,\
-  com.heima.common.redis.CacheService
+  com.heima.common.redis.CacheService,\
+  com.heima.common.jackson.InitJacksonConfig

@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: leadnews-article
+  main:
+    allow-bean-definition-overriding: true
   cloud:
     nacos:
       discovery:

@@ -19,4 +19,5 @@ public interface ApArticleService extends IService<ApArticle> {
     ResponseResult load(Short loadtype, ArticleHomeDto dto);
 
     ResponseResult saveArticle(ArticleDto dto);
+
 }

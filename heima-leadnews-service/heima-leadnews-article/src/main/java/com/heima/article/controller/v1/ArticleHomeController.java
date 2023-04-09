@@ -31,4 +31,6 @@ public class ArticleHomeController {
     public ResponseResult loadNew(@RequestBody ArticleHomeDto dto) {
         return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_NEW,dto);
     }
+
+
 }
