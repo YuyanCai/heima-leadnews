@@ -3,6 +3,7 @@ package com.heima.wemedia;
 import com.google.j2objc.annotations.AutoreleasePool;
 import com.heima.common.aip.GreenImageScan;
 import com.heima.common.aip.GreenTextScan;
+import com.heima.common.aip.GreenTextScan;
 import com.heima.file.service.FileStorageService;
 import com.heima.wemedia.service.WmNewsAutoScanService;
 import com.sun.org.apache.xerces.internal.xs.datatypes.ByteList;
