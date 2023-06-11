@@ -14,3 +14,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
+kafka:
+  hosts: 127.0.0.1:9092
+  group: ${spring.application.name}
+
