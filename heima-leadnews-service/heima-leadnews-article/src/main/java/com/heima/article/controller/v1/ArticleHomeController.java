@@ -19,17 +19,18 @@ public class ArticleHomeController {
 
     @PostMapping("/load")
     public ResponseResult load(@RequestBody ArticleHomeDto dto) {
-        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE,dto);
+//        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE, dto);
+        return apArticleService.load2(dto, ArticleConstants.LOADTYPE_LOAD_MORE,true);
     }
 
     @PostMapping("/loadmore")
     public ResponseResult loadMore(@RequestBody ArticleHomeDto dto) {
-        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE,dto);
+        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE, dto);
     }
 
     @PostMapping("/loadnew")
     public ResponseResult loadNew(@RequestBody ArticleHomeDto dto) {
-        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_NEW,dto);
+        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_NEW, dto);
     }
 
 
